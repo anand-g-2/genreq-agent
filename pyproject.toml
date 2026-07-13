@@ -16,7 +16,7 @@ dependencies = [
     "langchain-anthropic>=0.2.0",
 
     # System probing
-    "pynvml>=11.5.0",
+    "nvidia-ml-py>=12.560.0",
     "pydantic>=2.7.0",
 
     # Research
@@ -48,9 +48,9 @@ dev = [
     "mypy>=1.10.0",
 ]
 
-[project.scripts]
-reqgen-probe = "scripts.run_probe:main"
-reqgen-agent = "scripts.run_agent:main"
+# [project.scripts]
+# reqgen-probe = "scripts.run_probe:main"
+# reqgen-agent = "scripts.run_agent:main"
 
 [build-system]
 requires = ["hatchling"]
